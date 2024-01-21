@@ -24,12 +24,12 @@
   column-gap: 10px;
 }
 
-div > div > p {
+.textContainer > p {
   color: white;
   font-size: 12px;
 }
 
-div > div > img {
+.textContainer > img {
   background-color: white;
   border-radius: 5px;
   width: 20px;
@@ -38,7 +38,7 @@ div > div > img {
   margin-right: 5px;
 }
 
-div > div > button {
+.buttonContainer > button {
   color: white;
   height: 25px;
   font-size: 12px;
@@ -46,13 +46,13 @@ div > div > button {
   border: none;
 }
 
-div > div > button:nth-child(1) {
+.buttonContainer > button:nth-child(1) {
   width: 10rem;
   background-color: rgba(22, 27, 26, 1);
   border: 1px solid rgba(131, 133, 132, 1);
 }
 
-div > div > button:last-child {
+.buttonContainer > button:last-child {
   width: 5rem;
   background-color: rgba(75, 95, 213, 1);
   margin-right: 100px;

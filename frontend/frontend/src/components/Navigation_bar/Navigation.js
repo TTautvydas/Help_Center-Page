@@ -14,8 +14,8 @@ export default function Navigation() {
         <p id="helpCenter">Help Center</p>
       </div>
       <div className={styles.buttonContainer}>
-        <Button />
-        <Button />
+        <Button buttonName={"Submit a request"} />
+        <Button buttonName={"Login "} />
       </div>
     </div>
   );

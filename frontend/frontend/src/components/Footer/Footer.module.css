@@ -1,0 +1,18 @@
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.copyrightContainer {
+  color: white;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.copyrightContainer > h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

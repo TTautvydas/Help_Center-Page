@@ -1,0 +1,30 @@
+.articleContainer {
+  width: 270px;
+  height: 120px;
+  display: flex;
+}
+
+.articleContainer > img {
+  width: 70px;
+  height: 60px;
+}
+
+.articleContainer > div > h6 {
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.articleContainer > div > p {
+  width: 200px;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.articleContainer > div > a {
+  font-size: 10px;
+  text-decoration: none;
+  color: rgb(153, 153, 223);
+}

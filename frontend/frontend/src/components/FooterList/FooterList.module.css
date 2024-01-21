@@ -1,0 +1,10 @@
+.footerList {
+  color: white;
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.footerList > li {
+  font-size: 9px;
+  line-height: 15px;
+}
