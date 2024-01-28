@@ -1,24 +1,15 @@
 import "./App.css";
-import Navigation from ".//components/Navigation_bar/Navigation";
-import Header from ".//components/Header/Header";
-import Main from ".//components/Main_body/Main";
-import Footer from ".//components/Footer/Footer";
+import FormPage from "./components/FormPage/FormPage";
+import HelpPage from "./components/HelpPage/HelpPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <div>
-        <Navigation />
-      </div>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Main />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Routes>
+        <Route path="" element={<HelpPage />} />
+        <Route path="/submit" element={<FormPage />} />
+      </Routes>
     </div>
   );
 }

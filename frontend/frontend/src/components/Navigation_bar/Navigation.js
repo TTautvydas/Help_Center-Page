@@ -1,8 +1,11 @@
 import React from "react";
 import Button from "../Button/Button";
 import styles from "../Navigation_bar/Navigation.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Navigation() {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.mainContainer}>
       <div className={styles.textContainer}>
@@ -14,7 +17,10 @@ export default function Navigation() {
         <p id="helpCenter">Help Center</p>
       </div>
       <div className={styles.buttonContainer}>
-        <Button buttonName={"Submit a request"} />
+        <Button
+          buttonName={"Submit a request"}
+          onClick={(e) => navigate("/submit")}
+        />
         <Button buttonName={"Login "} />
       </div>
     </div>
