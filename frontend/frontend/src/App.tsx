@@ -1,6 +1,7 @@
+import React from "react";
 import "./App.css";
-import FormPage from "./components/FormPage/FormPage";
-import HelpPage from "./components/HelpPage/HelpPage";
+import FormPage from "./components/FormPage/FormPage.tsx";
+import HelpPage from "./components/HelpPage/HelpPage.tsx";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
