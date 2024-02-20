@@ -4,16 +4,24 @@ import axios from "axios";
 
 const requestEndpoint = "http://localhost:3001/submit";
 
-export default function FormPage(data) {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = async (data) => {
+interface FormData {
+  name: string;
+  email: string;
+  orderId: string;
+  description: string;
+}
+
+export default function FormPage() {
+  const { register, handleSubmit } = useForm<FormData>();
+  const onSubmit = async (data: FormData) => {
+    console.log(data);
+
     try {
-      await axios.post(requestEndpoint, {
-        ...data,
-      });
+      await axios.post(requestEndpoint, data);
       console.log(data);
+
       alert("Request created");
-    } catch (error) {
+    } catch (error: any) {
       alert("Create failed");
       console.log(error.message);
     }

@@ -15,7 +15,6 @@ const requestSchema = mongoose.Schema({
   },
   orderId: {
     type: String,
-    minLength: 10,
     maxLength: 10,
     require: true,
   },

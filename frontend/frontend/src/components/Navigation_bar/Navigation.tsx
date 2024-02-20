@@ -1,10 +1,13 @@
 import React from "react";
-import Button from "../Button/Button";
+import { Button } from "../Button/Button.tsx";
 import styles from "../Navigation_bar/Navigation.module.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Navigation() {
   const navigate = useNavigate();
+  const handleClick = () => {
+    console.log("Login clicked");
+  };
 
   return (
     <div className={styles.mainContainer}>
@@ -19,9 +22,9 @@ export default function Navigation() {
       <div className={styles.buttonContainer}>
         <Button
           buttonName={"Submit a request"}
-          onClick={(e) => navigate("/submit")}
+          onClick={() => navigate("/submit")}
         />
-        <Button buttonName={"Login "} />
+        <Button buttonName={"Login "} onClick={handleClick} />
       </div>
     </div>
   );
