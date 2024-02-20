@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "../ArticleCard/ArticleCard.module.css";
 
-export default function ArticleCard({ logo }) {
+interface Props {
+  logo: string;
+}
+
+export default function ArticleCard({ logo }: Props): JSX.Element {
   return (
     <div className={styles.articleContainer}>
       <img src={logo} alt="logo" />

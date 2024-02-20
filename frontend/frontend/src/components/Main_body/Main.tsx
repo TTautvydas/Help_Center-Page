@@ -1,5 +1,5 @@
 import React from "react";
-import ArticleCard from "../ArticleCard/ArticleCard";
+import ArticleCard from "../ArticleCard/ArticleCard.tsx";
 import styles from "../Main_body/Main.module.css";
 import branch from "../ArticleCard/branch.PNG";
 import account from "../ArticleCard/account.PNG";
