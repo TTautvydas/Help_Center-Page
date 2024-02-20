@@ -1,6 +1,16 @@
 import React from "react";
 import styles from "../FooterList/FooterList.module.css";
 
+interface Props {
+  listName: string;
+  item1: any;
+  item2?: any;
+  item3?: any;
+  item4?: any;
+  item5?: any;
+  item6?: any;
+}
+
 export default function FooterList({
   listName,
   item1,
@@ -9,7 +19,7 @@ export default function FooterList({
   item4,
   item5,
   item6,
-}) {
+}: Props) {
   return (
     <ul className={styles.footerList}>
       <h5>{listName}</h5>

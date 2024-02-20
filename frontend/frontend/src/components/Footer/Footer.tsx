@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Footer/Footer.module.css";
-import FooterList from "../FooterList/FooterList";
+import FooterList from "../FooterList/FooterList.tsx";
 
 export default function Footer() {
   return (
@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
       <div className={styles.copyrightContainer}>
         <h1>
-          <i class="fa-brands fa-react"></i>
+          <i className="fa-brands fa-react"></i>
         </h1>
         <p>
           &#169; Copyright 2024 <br></br> Tautvydas Studio Design, Inc.{" "}
