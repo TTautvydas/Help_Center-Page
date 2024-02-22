@@ -5,7 +5,7 @@ interface Props {
   logo: string;
 }
 
-export default function ArticleCard({ logo }: Props): JSX.Element {
+const ArticleCard: React.FC<Props> = ({ logo }: Props): JSX.Element => {
   return (
     <div className={styles.articleContainer}>
       <img src={logo} alt="logo" />
@@ -19,4 +19,6 @@ export default function ArticleCard({ logo }: Props): JSX.Element {
       </div>
     </div>
   );
-}
+};
+
+export default ArticleCard;

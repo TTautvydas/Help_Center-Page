@@ -11,7 +11,7 @@ interface Props {
   item6?: any;
 }
 
-export default function FooterList({
+const FooterList: React.FC<Props> = ({
   listName,
   item1,
   item2,
@@ -19,7 +19,7 @@ export default function FooterList({
   item4,
   item5,
   item6,
-}: Props) {
+}: Props): JSX.Element => {
   return (
     <ul className={styles.footerList}>
       <h5>{listName}</h5>
@@ -31,4 +31,6 @@ export default function FooterList({
       <li>{item6}</li>
     </ul>
   );
-}
+};
+
+export default FooterList;

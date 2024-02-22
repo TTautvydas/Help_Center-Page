@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "../Button/Button.tsx";
+import Button from "../Button/Button.tsx";
 import styles from "../Navigation_bar/Navigation.module.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Navigation() {
+const Navigation: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
   const handleClick = () => {
     console.log("Login clicked");
@@ -28,4 +28,6 @@ export default function Navigation() {
       </div>
     </div>
   );
-}
+};
+
+export default Navigation;

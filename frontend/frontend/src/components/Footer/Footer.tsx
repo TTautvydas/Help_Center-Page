@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../Footer/Footer.module.css";
 import FooterList from "../FooterList/FooterList.tsx";
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <div>
@@ -49,4 +49,6 @@ export default function Footer() {
       </div>
     </div>
   );
-}
+};
+
+export default Footer;

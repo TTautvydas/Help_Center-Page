@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../Header/Header.module.css";
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
     <div className={styles.mainContainer}>
       <h1>How can we help?</h1>
@@ -11,4 +11,6 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};
+
+export default Header;

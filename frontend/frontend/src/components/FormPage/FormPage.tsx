@@ -11,14 +11,12 @@ interface FormData {
   description: string;
 }
 
-export default function FormPage() {
+const FormPage: React.FC = (): JSX.Element => {
   const { register, handleSubmit } = useForm<FormData>();
   const onSubmit = async (data: FormData) => {
-    console.log(data);
-
     try {
-      await axios.post(requestEndpoint, data);
-      console.log(data);
+      const response = await axios.post(requestEndpoint, data);
+      console.log(response.data);
 
       alert("Request created");
     } catch (error: any) {
@@ -38,4 +36,6 @@ export default function FormPage() {
       </form>
     </div>
   );
-}
+};
+
+export default FormPage;

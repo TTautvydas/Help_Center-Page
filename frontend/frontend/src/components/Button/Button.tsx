@@ -5,6 +5,11 @@ interface Props {
   onClick: () => void;
 }
 
-export function Button({ buttonName, onClick }: Props): JSX.Element {
+const Button: React.FC<Props> = ({
+  buttonName,
+  onClick,
+}: Props): JSX.Element => {
   return <button onClick={onClick}>{buttonName}</button>;
-}
+};
+
+export default Button;

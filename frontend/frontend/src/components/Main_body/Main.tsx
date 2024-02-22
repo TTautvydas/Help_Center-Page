@@ -8,7 +8,7 @@ import key from "../ArticleCard/key.PNG";
 import money from "../ArticleCard/money.PNG";
 import puzzle from "../ArticleCard/puzzle.PNG";
 
-export default function Main() {
+const Main: React.FC = (): JSX.Element => {
   return (
     <div className={styles.cardContainer}>
       <div>
@@ -23,4 +23,6 @@ export default function Main() {
       </div>
     </div>
   );
-}
+};
+
+export default Main;
